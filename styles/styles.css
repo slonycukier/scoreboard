@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "timer";
+  src: url("../fonts/timer/CursedTimerUlil-Aznm.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #9aabd8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  height: 500px; /* Set a fixed height for the container */
+  margin: 30px auto;
+  width: 500px;
+  padding: 20px;
+  background-color: #1b244a;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+h3 {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#score-home,
+#score-guest {
+  color: #f94f6d;
+  font-family: timer;
+  font-size: 90px;
+  margin: 40px;
+  padding: 0 50px;
+  background-color: black;
+  height: 110px;
+
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+}
+
+.buttons button,
+#new-game {
+  background-color: #1b244a;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  color: #9aabd8;
+}
+
+.winning {
+  border: 3px solid #f8c36c; /* Gold border */
+  box-shadow: 0 0 20px #f8c36c, 0 0 30px #f39c12, 0 0 40px #f39c12;
+  background-color: #1b244a; /* Background glow */
+  transition: all 0.3s ease-in-out;
+}
